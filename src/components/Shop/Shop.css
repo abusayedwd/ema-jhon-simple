@@ -10,15 +10,9 @@
          padding: 30px;
         
 }
-.order{
+.order-summary{
          
         background: rgba(255, 153, 0, 0.3);
 }
- .item{
-        margin-left: 25px;
-        margin-top: 25px;
- }
-.order h3{
-        margin-top: 16px;
-         text-align: center;
-}
+  
+ 

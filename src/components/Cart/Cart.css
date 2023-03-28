@@ -1,0 +1,19 @@
+.cart h3{
+        margin-top: 16px;
+         text-align: center;
+        text-decoration: underline;
+}
+.cart{
+        background: rgba(255, 153, 0, 0.3);
+        padding: 30px;
+        position: sticky;
+        top: 0;
+}
+.item-add{
+        margin-top: 20px;
+         margin-left: 20px;
+}
+.item-add p{
+        margin-top: 20px;
+        font-size: 24px;
+}
