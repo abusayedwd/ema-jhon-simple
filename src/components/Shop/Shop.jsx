@@ -13,7 +13,7 @@ const Shop = () => {
                 .then(data => setProducts(data))
         },[])
         useEffect(() => {
-                console.log('product',products)
+                // console.log('product',products)
                 const storedCart = getShoppingCart();
                 let saveCart = [];
                 for(const id in storedCart){

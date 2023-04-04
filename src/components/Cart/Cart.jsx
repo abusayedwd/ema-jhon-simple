@@ -21,7 +21,7 @@ const Cart = (props) => {
         <div className='cart'>
                 <h3>Order Summary</h3>
                 <div className='item-add'>
-                        <p >Selectet item : {cart.length}</p>
+                        <p >Selectet item : {quantity}</p>
                         <p>Total Price : $ {totalPrice}</p>
                         <p>Total Shipping :$ {totalShipping}</p>
                         <p>Tax :$ {tax}</p> <br />
