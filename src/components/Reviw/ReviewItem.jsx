@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDeleteLeft,faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import './Reviw.css'
 
-const Reviitem = ( {product}) => {
-        const {name, price, ratings,img} = product;
+const Reviitem = ( {product,removeHandler}) => {
+        const {name, id, price, ratings,img} = product;
         return (
                 <div className='reviw-item'>
                 <div className='product-info'>
@@ -17,7 +17,7 @@ const Reviitem = ( {product}) => {
                  </div>
 
                  <div>
-       <button className='delete-btn'>
+       <button onClick={()=>removeHandler(id)} className='delete-btn'>
         < FontAwesomeIcon className='delete-icon' icon={faTrashCan} />
         </button>
                 </div>
