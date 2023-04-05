@@ -3,16 +3,21 @@ import Cart from '../Cart/Cart';
 import './Order.css'
 import { useLoaderData } from 'react-router-dom';
 import Reviitem from '../Reviw/ReviewItem';
-import { removeFromDb } from '../../utilities/fakedb';
+import { deleteShoppingCart, removeFromDb } from '../../utilities/fakedb';
 const Order = () => {
         const  saveCart = useLoaderData()
         const [cart, setCart] = useState(saveCart)
         // console.log(product)
          const removeHandler = (id) => {
-                // console.log(id)
+             
                 const remaing = cart.filter(product => product.id !== id)
                 setCart(remaing)
                 removeFromDb(id)
+         }
+         const clrarCarthandler = () => {
+                setCart([]);
+                deleteShoppingCart()
+                 
          }
 
 
@@ -30,7 +35,10 @@ const Order = () => {
 
                 </div>
                 <div className="order-summary">
-                <Cart cart = { cart}></Cart>
+                <Cart 
+                cart = { cart}
+                clrarCarthandler ={clrarCarthandler}
+                ></Cart>
                 </div>
                  
 

@@ -45,6 +45,7 @@ const Shop = () => {
                  setCart(newCart)
                  addToDb(product.id)
         }
+         
         return (
                 <div className='shop-container'>
                         <div className="products-container">

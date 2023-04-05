@@ -17,3 +17,19 @@
         margin-top: 20px;
         font-size: 24px;
 }
+.clear-btn{
+        width: 100%;
+        color: beige;
+        font-weight: bold;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: rgb(172, 145, 110);
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 10px;
+
+}
+.clear-btn:hover{
+        background-color: red;
+}
